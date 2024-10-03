@@ -18,3 +18,12 @@ deploy:
 
 properties:
     revision : 11
+    MINIO_ACCESS_KEY : 
+      vault: MINIO_ACCESS_KEY
+    MINIO_SECRET_KEY: 
+      vault: MINIO_SECRET_KEY
+    MINIO_BUCKET : index-snapshot
+    ENABLE_OPENSEARCH_BACKUP : 1
+    INDEX_LIST : graylog_0, gl-events_0, gl-system-events_0
+    OPENSEARCH_ENDPOINT : http://opensearch-2-13:9200
+    MINIO_ENDPOINT : http://minio-2-0:9000
