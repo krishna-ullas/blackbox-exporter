@@ -4,11 +4,11 @@ app:
     notify: kullas@ecloudcontrol.com
     
 build:
-    version: 0.2
+    version: 0.24
     env: DEV
     build_file: none
     output_files: output/*.zip
-    image_template: blackboxexporter-0.20
+    image_template: blackboxexporter-0.24
     
 deploy:
     context: krishna-ullas/DEV
@@ -24,6 +24,6 @@ properties:
       vault: MINIO_SECRET_KEY
     MINIO_BUCKET : index-snapshot
     ENABLE_OPENSEARCH_BACKUP : 1
-    INDEX_LIST : graylog_0, gl-events_0, gl-system-events_0
+    INDEX_LIST : graylog*,apigateway*
     OPENSEARCH_ENDPOINT : http://opensearch-2-13:9200
     MINIO_ENDPOINT : http://minio-2-0:9000
