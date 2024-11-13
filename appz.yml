@@ -17,7 +17,7 @@ deploy:
     - 9115
 
 properties:
-    revision : 14
+    revision : 15
     MINIO_ACCESS_KEY : 
       vault: MINIO_ACCESS_KEY
     MINIO_SECRET_KEY: 
