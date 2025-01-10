@@ -24,7 +24,7 @@ properties:
       vault: MINIO_SECRET_KEY
     MINIO_BUCKET : index-snapshot
     ENABLE_OPENSEARCH_BACKUP : 1
-    INDEX_LIST : *
+    INDEX_LIST : "*"
     OPENSEARCH_ENDPOINT : opensearch-2-13:9200
     OPENSEARCH_CHECKTIME : 24
     MINIO_ENDPOINT : http://minio-2-0:9000
