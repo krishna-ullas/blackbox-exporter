@@ -17,12 +17,12 @@ deploy:
     - 9115
 
 properties:
-    revision : 18
+    revision : 19
     MINIO_ACCESS_KEY : 
       vault: MINIO_ACCESS_KEY
     MINIO_SECRET_KEY: 
       vault: MINIO_SECRET_KEY
-    MINIO_BUCKET : index-snapshot
+    MINIO_BUCKET_NAME : index-snapshot
     ENABLE_OPENSEARCH_BACKUP : 1
     INDEX_LIST : "*"
     OPENSEARCH_ENDPOINT : opensearch-2-13:9200
